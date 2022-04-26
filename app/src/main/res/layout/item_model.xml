@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="com.pourkazemi.mahdi.maktab_hw_13_2.data.model.Photo" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/mars_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{photo.url_s}"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+    </FrameLayout>
+</layout>
